@@ -20,14 +20,14 @@ namespace FirstTask
         public int age;
         public Mark[] marks;
         
-        public int GetAvgMark()
+        public double GetAvgMark()
         {
             int amount = 0;
             for(int i = 0; i < marks.Length; i++)
             {
                 amount += marks[i].subjectMark;
             }
-            return amount / marks.Length;
+            return amount / (double)marks.Length;
         }
         
         public void ResetAllMarks()
